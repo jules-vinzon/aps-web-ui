@@ -1,0 +1,42 @@
+import Main from "./index.styles"
+import React from 'react'
+import Head from 'next/head'
+// import { useRouter } from 'next/router'
+import SampleHeader from "./containers/sampleHeader"
+import SampleContent from "./containers/sampleContent"
+import SampleFooter from "./containers/sampleFooter"
+// import { useSelector, 
+//   useDispatch 
+// } from 'react-redux'
+// import LoadingPage from './loadingPage'
+
+
+export default function OrderDetailsCmp() {
+  // useEffect(() => {
+  //   CODE HERE
+  // }, []);
+
+  return (
+      <Main>
+          <Head>
+            {/* WEB TITLE HERE */}
+            <title>Next Template</title>
+            <meta name="theme-color" content="#5B4E8E" />
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+            <meta name="apple-mobile-web-app-status-bar-style" content="#5B4E8E" />
+            <meta name="norton-safeweb-site-verification" content="-hol51gs638ao4sh1rb2bit9os06b-sogydolz0tbtf34emmdm82llr4s7jt9rcw484e50so2xxxddugpmqe9ghrbskrgm3egt5gbnpr3wa1znxr4d-g7-ecxmebp1gx" />
+            <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+          </Head>
+
+          {/* PAGE HEADER HERE */}
+          <SampleHeader />
+
+          {/* PAGE CONTENT HERE */}
+          <SampleContent />
+          
+          {/* PAGE FOOTER HERE */}
+          <SampleFooter />
+          
+      </Main>
+  )
+}
